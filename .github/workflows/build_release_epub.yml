@@ -1,11 +1,7 @@
 name: Build and Release EPUB
 
 on:
-  push:
-    branches:
-      - main  # Trigger only on push to main branch
-    tags:
-      - '*'   # Trigger also on any tag
+  push: {}  # Trigger on every push (commits and tags)
 
 jobs:
   build:
