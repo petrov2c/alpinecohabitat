@@ -84,10 +84,11 @@ This is more than just a coliving experiment; it is a long-term effort to **esta
 ## Next Steps
 
 We are currently focusing on:
-✅ Refining the governance model.
-✅ Engaging early participants.
-✅ Researching legal and financial pathways.
-✅ Exploring location scouting strategies.
+
+- ✅ Refining the governance model.
+- ✅ Engaging early participants.
+- ✅ Researching legal and financial pathways.
+- ✅ Exploring location scouting strategies.
 
 **Stay tuned!** 🚀
 

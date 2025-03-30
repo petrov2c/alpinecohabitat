@@ -37,10 +37,10 @@ While timeshares were once considered an alternative, they have largely **fallen
 ## **AlpineCohabitat: A New Approach**
 ### **What It Offers**
 AlpineCohabitat seeks to **overcome these limitations** by creating a **cooperative, community-driven model** that provides:
-✅ **Lower Costs than Traditional Ownership** – Shared investment in property, reducing financial strain.
-✅ **More Stability than Short-Term Rentals** – Members have priority access at predictable costs.
-✅ **A Community-Based Approach** – Built-in social connection with like-minded individuals.
-✅ **A Flexible, Sustainable Use Model** – Space is utilized efficiently, avoiding wastefulness.
+- ✅ **Lower Costs than Traditional Ownership** – Shared investment in property, reducing financial strain.
+- ✅ **More Stability than Short-Term Rentals** – Members have priority access at predictable costs.
+- ✅ **A Community-Based Approach** – Built-in social connection with like-minded individuals.
+- ✅ **A Flexible, Sustainable Use Model** – Space is utilized efficiently, avoiding wastefulness.
 
 ### **How It Works**
 - **Cooperative or Membership-Based Access** – Instead of purchasing an individual home, members collectively invest in a **shared retreat property**.
