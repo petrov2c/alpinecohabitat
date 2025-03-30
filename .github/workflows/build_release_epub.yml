@@ -30,3 +30,10 @@ jobs:
         with:
           name: alpinecohabitat-epub
           path: alpinecohabitat.epub
+
+      # 👇 Add this step to automatically upload EPUB to GitHub Releases
+      - name: Release EPUB on GitHub (for tagged commits)
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: alpinecohabitat.epub
