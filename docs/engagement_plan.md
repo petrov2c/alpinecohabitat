@@ -1,6 +1,6 @@
 # AlpineCohabitat Engagement Plan
 
-## **Introduction**
+## Introduction
 
 Engagement is fundamental to AlpineCohabitat’s success. This plan outlines how we will **attract, involve, and retain** members through different stages of the project. Engagement will evolve from an **early online-driven phase** to deepening **offline, real-world interactions**, ensuring trust and alignment before transitioning to governance, development, and operations.
 
@@ -10,9 +10,9 @@ The **podcast** is envisioned as a key tool in Phase 1, helping to explore and c
 
 Throughout all phases, engagement will shift in focus—starting with **discovery and alignment**, progressing to **active participation and community-building**, and finally transitioning into **long-term sustainability and external knowledge sharing**.
 
-## **Engagement Goals by Phase**
+## Engagement Goals by Phase
 
-### **Phase 1: Awareness & Early Interest**
+### Phase 1: Awareness & Early Interest
 **Goal:** Generate interest and attract the right early supporters.
 
 **Key Strategies:**
@@ -25,7 +25,7 @@ Throughout all phases, engagement will shift in focus—starting with **discover
 
 ---
 
-### **Phase 2: Community Development & Offline Transition**
+### Phase 2: Community Development & Offline Transition
 **Goal:** Convert online interest into **real-world connections** and build commitment through shared experiences.
 
 **Key Strategies:**
@@ -38,7 +38,7 @@ Throughout all phases, engagement will shift in focus—starting with **discover
 
 ---
 
-### **Phase 3: Governance & Structural Finalization**
+### Phase 3: Governance & Structural Finalization
 **Goal:** Define how the community operates and is structured while exploring diversity and accessibility.
 
 **Key Strategies:**
@@ -52,7 +52,7 @@ Throughout all phases, engagement will shift in focus—starting with **discover
 
 ---
 
-### **Phase 4: Cohabitat Acquisition & Development**
+### Phase 4: Cohabitat Acquisition & Development
 **Goal:** Secure the site, establish development plans, and initiate partial use of the property.
 
 **Key Strategies:**
@@ -66,7 +66,7 @@ Throughout all phases, engagement will shift in focus—starting with **discover
 
 ---
 
-### **Phase 5: Operations & Local Engagement**
+### Phase 5: Operations & Local Engagement
 **Goal:** Ensure long-term sustainability and successful community operations.
 
 **Key Strategies:**
@@ -79,7 +79,7 @@ Throughout all phases, engagement will shift in focus—starting with **discover
 
 ---
 
-### **Phase 6: Expansion & Knowledge Sharing**
+### Phase 6: Expansion & Knowledge Sharing
 **Goal:** Share knowledge and support the creation of similar initiatives elsewhere.
 
 **Key Strategies:**
@@ -92,7 +92,7 @@ Throughout all phases, engagement will shift in focus—starting with **discover
 
 ---
 
-## **Quantitative Engagement Targets**
+## Quantitative Engagement Targets
 Tracking engagement across phases is essential to ensure there’s enough momentum at each stage before progressing further.
 
 | Phase | Target Audience Reach | Active Participants | Committed Core Members |
@@ -106,7 +106,7 @@ Tracking engagement across phases is essential to ensure there’s enough moment
 
 ---
 
-## **Next Steps**
+## Next Steps
 - **Define Specific Events & Initial Content Strategy (Phase 1)**
 - **Develop Outreach & Survey for Early Engagement**
 - **Identify Potential Podcast Guests & Topics**
