@@ -1,14 +1,19 @@
 name: Build and Release EPUB
 
 on:
-  push: {}  # Trigger on every push (commits and tags)
+  push:
+    branches:
+      - main  # Trigger only on push to main branch
+    tags:
+      - '*'   # Trigger also on any tag
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Install dependencies
         run: |
@@ -22,10 +27,10 @@ jobs:
             --metadata epub-title-page=false \
             --epub-embed-font=/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf \
             -o alpinecohabitat.epub \
-            README.md $(git ls-files '*.md' | grep -v '^README.md$' | sort)
+            README.md $(git ls-files '*.md' | grep -vx 'README.md' | sort)
 
       - name: Upload EPUB Artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: alpinecohabitat-epub
           path: alpinecohabitat.epub
