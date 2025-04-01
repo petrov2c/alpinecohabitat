@@ -35,7 +35,8 @@ jobs:
             -V mainfont="Noto Sans" \
             -V monofont="Noto Sans Mono" \
             -V fontsize=11pt \
-            --metadata title="AlpineCohabitat" \
+            -V geometry:margin=2.5cm \
+            -V table-use-row-colors=true \
             -o alpinecohabitat.pdf \
             README.md $(git ls-files '*.md' | grep -vx 'README.md' | sort)
 
