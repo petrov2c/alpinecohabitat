@@ -1,4 +1,4 @@
-name: Build and Release EPUB
+name: Build and Release EPUB and PDF
 
 on:
   push:
@@ -17,7 +17,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y pandoc fonts-noto-color-emoji
+          sudo apt-get install -y pandoc texlive-xetex fonts-noto-color-emoji
 
       - name: Build EPUB
         run: |
@@ -28,12 +28,22 @@ jobs:
             -o alpinecohabitat.epub \
             README.md $(git ls-files '*.md' | grep -vx 'README.md' | sort)
 
-      - name: Upload to GitHub Release (tag:latest)
+      - name: Build PDF
+        run: |
+          pandoc -s -f gfm --toc \
+            --pdf-engine=xelatex \
+            --metadata title="AlpineCohabitat" \
+            -o alpinecohabitat.pdf \
+            README.md $(git ls-files '*.md' | grep -vx 'README.md' | sort)
+
+      - name: Upload to GitHub Release (tag: latest)
         uses: softprops/action-gh-release@v2
         with:
-          files: alpinecohabitat.epub
+          files: |
+            alpinecohabitat.epub
+            alpinecohabitat.pdf
           tag_name: latest
-          name: Latest EPUB
+          name: Latest EPUB and PDF
           draft: false
           prerelease: false
         env:
