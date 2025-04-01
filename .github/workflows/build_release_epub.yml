@@ -1,7 +1,9 @@
 name: Build and Release EPUB
 
 on:
-  push: {}  # Trigger on every push (commits and tags)
+  push:
+    branches: [main]
+  workflow_dispatch:
 
 jobs:
   build:
@@ -25,31 +27,14 @@ jobs:
             -o alpinecohabitat.epub \
             README.md $(git ls-files '*.md' | grep -vx 'README.md' | sort)
 
-      - name: Commit EPUB to repo
-        run: |
-          mkdir -p build
-          mv alpinecohabitat.epub build/
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
-          git fetch origin
-          git reset --hard origin/main
-          git add build/alpinecohabitat.epub
-          if git diff --cached --quiet; then
-            echo "No changes to commit."
-          else
-            git commit -m "Auto-commit updated EPUB [skip ci]"
-            git push origin main
-          fi
-
-      - name: Upload EPUB Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: alpinecohabitat-epub
-          path: alpinecohabitat.epub
-
-      # 👇 Add this step to automatically upload EPUB to GitHub Releases
-      - name: Release EPUB on GitHub (for tagged commits)
-        if: startsWith(github.ref, 'refs/tags/v')
+      - name: Upload to GitHub Release (tag: latest)
         uses: softprops/action-gh-release@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           files: alpinecohabitat.epub
+          tag_name: latest
+          name: Latest EPUB
+          overwrite: true
+          draft: false
+          prerelease: false
