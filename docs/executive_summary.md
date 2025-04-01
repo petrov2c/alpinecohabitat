@@ -37,3 +37,11 @@ AlpineCohabitat is actively seeking collaboration and expertise from:
 
 Join us in creating a sustainable, community-centered future for residential and holiday living in the Alps.
 
+---
+
+📎 **Want to explore the full project documentation?**
+
+- [📘 Download the EPUB](https://github.com/petrov2c/alpinecohabitat/releases/latest/download/alpinecohabitat.epub)
+- [📄 Download the PDF](https://github.com/petrov2c/alpinecohabitat/releases/latest/download/alpinecohabitat.pdf)
+
+These versions are automatically updated and include all current project documents in one convenient file for offline reading and study.
