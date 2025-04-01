@@ -17,7 +17,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y pandoc texlive-xetex fonts-noto-color-emoji
+          sudo apt-get install -y pandoc texlive-xetex fonts-noto fonts-noto-color-emoji
 
       - name: Build EPUB
         run: |
@@ -32,6 +32,9 @@ jobs:
         run: |
           pandoc -s -f gfm --toc \
             --pdf-engine=xelatex \
+            -V mainfont="Noto Sans" \
+            -V monofont="Noto Sans Mono" \
+            -V fontsize=11pt \
             --metadata title="AlpineCohabitat" \
             -o alpinecohabitat.pdf \
             README.md $(git ls-files '*.md' | grep -vx 'README.md' | sort)
