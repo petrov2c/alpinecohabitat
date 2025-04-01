@@ -25,6 +25,21 @@ jobs:
             -o alpinecohabitat.epub \
             README.md $(git ls-files '*.md' | grep -vx 'README.md' | sort)
 
+      - name: Commit EPUB to repo
+        run: |
+          mkdir -p build
+          mv alpinecohabitat.epub build/
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git pull origin main
+          git add build/alpinecohabitat.epub
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Auto-commit updated EPUB [skip ci]"
+            git push origin main
+          fi
+
       - name: Upload EPUB Artifact
         uses: actions/upload-artifact@v4
         with:
