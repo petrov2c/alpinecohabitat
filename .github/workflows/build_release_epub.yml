@@ -28,7 +28,7 @@ jobs:
             -o alpinecohabitat.epub \
             README.md $(git ls-files '*.md' | grep -vx 'README.md' | sort)
 
-      - name: Upload to GitHub Release (tag: latest)
+      - name: Upload to GitHub Release (tag:latest)
         uses: softprops/action-gh-release@v2
         with:
           files: alpinecohabitat.epub
