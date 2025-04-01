@@ -47,3 +47,4 @@ jobs:
           else
             git commit -m "Auto-update EPUB and PDF on commit"
             git push origin main
+          fi
