@@ -29,8 +29,6 @@ jobs:
 
       - name: Upload to GitHub Release (tag: latest)
         uses: softprops/action-gh-release@v2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           files: alpinecohabitat.epub
           tag_name: latest
@@ -38,3 +36,5 @@ jobs:
           overwrite: true
           draft: false
           prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
