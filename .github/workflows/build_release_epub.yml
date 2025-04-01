@@ -34,7 +34,6 @@ jobs:
           files: alpinecohabitat.epub
           tag_name: latest
           name: Latest EPUB
-          overwrite: true
           draft: false
           prerelease: false
         env:
