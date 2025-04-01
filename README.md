@@ -81,6 +81,13 @@ This is more than just a coliving experiment; it is a long-term effort to **esta
 /roadmap      # Milestone planning & progress tracking
 ```
 
+📎 **Download the full documentation**
+
+The following files are automatically updated on each commit and include all current Markdown content in a convenient format for offline reading:
+
+- [📘 EPUB (latest)](https://github.com/petrov2c/alpinecohabitat/releases/latest/download/alpinecohabitat.epub)
+- [📄 PDF (latest)](https://github.com/petrov2c/alpinecohabitat/releases/latest/download/alpinecohabitat.pdf)
+
 ## Next Steps
 
 We are currently focusing on:
@@ -91,4 +98,3 @@ We are currently focusing on:
 - ✅ Exploring location scouting strategies.
 
 **Stay tuned!** 🚀
-
