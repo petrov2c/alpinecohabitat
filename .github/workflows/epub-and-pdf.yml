@@ -18,14 +18,25 @@ jobs:
           git config --global user.name "github-actions"
           git config --global user.email "actions@github.com"
 
-      - name: Install Pandoc and PDF tools
-        run: sudo apt-get install pandoc texlive-xetex -y
+      - name: Install Pandoc and wkhtmltopdf
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc wkhtmltopdf
 
       - name: Generate EPUB and PDF
         run: |
           mkdir -p build
-          pandoc docs/*.md -o build/AlpineCohabitat.epub --metadata-file=docs/metadata.yaml --toc --toc-depth=2
-          pandoc docs/*.md -o build/AlpineCohabitat.pdf --metadata-file=docs/metadata.yaml --toc --toc-depth=2
+          pandoc docs/*.md \
+            -o build/AlpineCohabitat.epub \
+            --metadata-file=docs/metadata.yaml \
+            --toc --toc-depth=2
+          
+          pandoc docs/*.md \
+            -t html5 \
+            -o build/AlpineCohabitat.pdf \
+            --metadata-file=docs/metadata.yaml \
+            --toc --toc-depth=2 \
+            --pdf-engine=wkhtmltopdf
 
       - name: Commit and push output
         run: |
@@ -36,4 +47,3 @@ jobs:
           else
             git commit -m "Auto-update EPUB and PDF on commit"
             git push origin main
-          fi
